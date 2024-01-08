@@ -39,7 +39,7 @@ const UpperBackground = () => {
   const ref = useRef(null)
   
   return (
-    <div ref={ref} className="w-full h-screen relative top-0 left-0 px-10 py-24 flex flex-wrap gap-10">
+    <div ref={ref} className="w-full min-h-screen relative top-0 left-0 px-10 py-24 flex flex-wrap gap-10">
      {data.map((item, index) => (
       <Card data={item} reference={ref} />
      ))}
